@@ -11,6 +11,9 @@ from pathlib import Path
 import csv
 import operator
 import time
+import dotenv
+
+dotenv.load_dotenv(dotenv.find_dotenv())
 
 HOME = "/huelsse/home"
 
@@ -89,7 +92,7 @@ def main():
 
         for link in links:
             headers = {'Content-type': 'application/json'}
-            requests.post("http://localhost:8080/substitution/update",
+            requests.post("http://localhost:8080/substitution/update?key=" + os.getenv("PASSWORD"),
                           data=convert_to_json(link, read_csv(link.get_csv_path())),
                           headers=headers)
 
