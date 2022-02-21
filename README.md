@@ -1,4 +1,4 @@
-#Huelsse Vertretungsplan Bot
+# Huelsse Vertretungsplan Bot
 
 english: _Huelsse substitution plan bot_
 
