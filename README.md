@@ -2,6 +2,13 @@
 
 english: _Huelsse substitution plan bot_
 
+This is a bot to collect data about the substitution plan of the <a href="https://cms.sachsen.schule/huelsse/home">Julius Ambrosius Hülße Gymnasium</a>
+
+
+## Used technologies
+
+- <a href="https://github.com/tabulapdf/tabula-java">Tabula</a>: to convert PDF document to CSV
+
 ## Setup
 
 ### Install required pip packages
